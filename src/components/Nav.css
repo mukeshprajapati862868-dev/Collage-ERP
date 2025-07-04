@@ -1,0 +1,95 @@
+/* nav.css */
+
+/* Navbar wrapper */
+.navbar {
+  background-color: #2a2a72;
+  color: white;
+  padding: 12px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Flex layout for container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo link */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* BSSITM Result link */
+.nav-link,
+.text {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 16px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.text:hover {
+  color: #ffcc00;
+}
+
+/* Toggle menu button (hamburger/X) */
+.navbar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+
+  /* ❌ Hidden on mobile */
+  display: none;
+}
+
+/* ✅ Show hamburger ONLY on large screens */
+@media screen and (min-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* Mobile menu container */
+.navbar-links-mobile {
+  margin-top: 12px;
+  background-color: #2a2a72;
+  padding: 10px 20px;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar-links-mobile li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
